@@ -13,7 +13,6 @@ logger.info(f"Starting server . . . ")
 app = Flask(__name__)
 CORS(app)
 app.config["CORS_HEADERS"] = "Content-Type"
-
 #----
 logger.info(f"Server started successfully")
 
