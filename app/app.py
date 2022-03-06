@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask_cors import CORS, cross_origin
 from loguru import logger
 
 RES = {
@@ -8,8 +9,12 @@ RES = {
 }
 
 logger.info(f"Starting server . . . ")
-app = Flask(__name__)
 
+app = Flask(__name__)
+CORS(app)
+app.config["CORS_HEADERS"] = "Content-Type"
+
+#----
 logger.info(f"Server started successfully")
 
 
