@@ -1,0 +1,45 @@
+[
+    {
+        "id": "009191",
+        "name": "Docsumo",
+        "category": "technology",
+        "sub_category": "information_extraction",
+        "location": "Kathmandu, Nepal",
+        "coordintes": [
+            "lat",
+            "lon"
+        ],
+        "tools": [],
+        "technology": [],
+        "socal_media": [
+            {
+                "linkedin": "",
+                "twitter": ""
+            }
+        ],
+        "total_members": "",
+        "career_page": "",
+        "founder": [
+            {
+                "name": "",
+                "social_media": [
+                    {
+                        "linkedin": "",
+                        "twitter": ""
+                    }
+                ]
+            }
+        ],
+        "open_positions": [
+            {
+                "data_scientist": {
+                    "position": "junior data scientist",
+                    "experience": 4,
+                    "must_have": [],
+                    "m"
+                }
+            }
+        ]
+    },
+    {}
+]
