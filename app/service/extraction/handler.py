@@ -70,3 +70,11 @@ class JsonFileHandler(FileHandler):
             logger.error(msg)
             data = {}
         return data
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
