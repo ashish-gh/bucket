@@ -1,7 +1,7 @@
-[
-    {
+{
+    "docsumo": {
         "id": "009191",
-        "name": "Docsumo",
+        "name": "docsumo",
         "category": "technology",
         "sub_category": "information_extraction",
         "location": "Kathmandu, Nepal",
@@ -9,8 +9,12 @@
             "lat",
             "lon"
         ],
-        "tools": [],
-        "technology": [],
+        "tools": [
+            "python"
+        ],
+        "technology": [
+            "opencv"
+        ],
         "socal_media": [
             {
                 "linkedin": "",
@@ -35,11 +39,9 @@
                 "data_scientist": {
                     "position": "junior data scientist",
                     "experience": 4,
-                    "must_have": [],
-                    "m"
+                    "must_have": []
                 }
             }
         ]
-    },
-    {}
-]
+    }
+}

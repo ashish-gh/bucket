@@ -27,8 +27,9 @@ class FileHandler(BaseHandler):
         self.file_name = file_name
     
     def __enter__(self) -> Type[BaseHandler]:
-        if not self.is_valid_file(file_name=self.file_name) or self.is_valid_extension(self.file_name) -> bool:
+        if not (self.is_valid_file(file_name=self.file_name) or self.is_valid_extension(self.file_name)):
             msg = f"[Error] exception in parsing file"
+            logger.error(msg)
             raise Exception 
         
         self.file = open(self.file_name, self._mode)
@@ -55,7 +56,7 @@ class FileHandler(BaseHandler):
     def handle(self, *args, **kwargs):
         pass
 
-class JsonFileHandler(FileHandler):
+class JSONFileHandler(FileHandler):
     extensions = [".json", ".JSON"]
 
     def __init__(self, file_name: str = "") -> None:
