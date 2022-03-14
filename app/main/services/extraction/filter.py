@@ -1,10 +1,10 @@
 import json
 import os
 from abc import ABCMeta, abstractmethod
-from asyncio.log import logger
 from typing import Dict
 
 import pandas as pd
+from loguru import logger
 
 from .extractor import JSONExtractor
 
@@ -26,11 +26,10 @@ class NameFilter(BaseFilter):
 
     def __init__(self, name: str = "") -> None:
         if not name:
-            raise ValueError("Empty value")
+            raise ValueError(f"Empty value of `name` for class: {self.classname}")
         self.name = name
     def filter(self, name: str = ""):
         logger.debug(f"Using : {self.classname} filter.")
-
         if not name:
             name = self.name
         data = JSONExtractor().extract()
