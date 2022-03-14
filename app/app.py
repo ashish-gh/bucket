@@ -29,7 +29,8 @@ def extract(name):
 
 
 def main():
-    app.run()
+    pass
+    # app.run()
 
     
 

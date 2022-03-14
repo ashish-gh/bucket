@@ -22,7 +22,7 @@ class JSONExtractor(BaseExtractor):
     """
     def extract(self) -> Dict[str, Dict]:
         file_name = os.path.join(
-            os.getcwd(), "app", "service", "extraction", "lookups", "data.json"
+            os.getcwd(), "app", "main","services", "extraction", "lookups", "data.json"
         )
         with JSONFileHandler(file_name=file_name) as handler:
             data = json.load(handler)
