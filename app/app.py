@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
 from loguru import logger
 
-from .services.extraction.filter import NameFilter
+from .service.extraction.filter import NameFilter
 
 RES = {
     "data" : "",
@@ -16,8 +16,9 @@ logger.info(f"Starting server . . . ")
 app = Flask(__name__)
 CORS(app)
 app.config["CORS_HEADERS"] = "Content-Type"
-
+#----
 logger.info(f"Server started successfully")
+
 
 @app.route("/<name>")
 def extract(name):
@@ -29,10 +30,11 @@ def extract(name):
 
 
 def main():
-    pass
-    # app.run()
+    app.run()
 
     
+
+
 
 if __name__ == "__main__":
     main()
